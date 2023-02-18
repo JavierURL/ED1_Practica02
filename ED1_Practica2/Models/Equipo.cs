@@ -4,6 +4,7 @@
     {
         [Name("Nombre")]
         public String nombre { get; set; }
+
         [Name("Coach")]
         public String coach { get; set; }
         [Name("Liga")]
