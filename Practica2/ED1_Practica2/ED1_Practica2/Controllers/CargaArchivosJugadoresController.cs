@@ -28,16 +28,16 @@ namespace ED1_Practica2.Controllers
                     }
 
 
-                    //leectura del archivo.
+                    //leectura del archivo.     
                     string informacionArchivo = System.IO.File.ReadAllText(ruta);
 
 
-                    //obtener lineas del archivo y llenar lista
+                    //obtener lineas del archivo y llenar lista    
                     foreach (string linea in informacionArchivo.Split('\n'))
                     {
                         if (!string.IsNullOrEmpty(linea))
                         {
-                            //obtener informacion de cada persona
+                            //obtener informacion de cada persona   
                             string[] FilaActual = linea.Split(',');
                             _listDesdeArchivo.Add(new Jugadores
                             {

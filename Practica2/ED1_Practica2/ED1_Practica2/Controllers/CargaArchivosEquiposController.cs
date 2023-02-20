@@ -21,10 +21,10 @@ namespace ED1_Practica2.Controllers
                 try
                 {
                     //copia del archivo recibido en el servidor.
-                    string ruta = Path.Combine(Path.GetTempPath(), archivo.Name); //ruta temporal del archivo
+                    string ruta = Path.Combine(Path.GetTempPath(), archivo.Name); //ruta temporal del archivo      
                     using (var stream = new FileStream(ruta, FileMode.Create))
                     {
-                        archivo.CopyTo(stream); //copiar el contenido del archivo
+                        archivo.CopyTo(stream); //copiar el contenido del archivo     
                     }
 
 
@@ -32,7 +32,7 @@ namespace ED1_Practica2.Controllers
                     string informacionArchivo = System.IO.File.ReadAllText(ruta);
 
 
-                    //obtener lineas del archivo y llenar lista
+                    //obtener lineas del archivo y llenar lista     
                     foreach (string linea in informacionArchivo.Split('\n'))
                     {
                         if (!string.IsNullOrEmpty(linea))
