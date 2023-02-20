@@ -1,32 +1,42 @@
-﻿namespace ED1_Practica2.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
+
+namespace ED1_Practica2.Models
 {
-    public class Jugadores
-    {
-        [Name("Nombre")]
-        public String nombre { get; set; }
-        [Name("Apellido")]
-        public String apellido { get; set; }
-        [Name("Rol")]
-        public String rol { get; set; }
-        [Name("KDA")]
-        public double kda { get; set; }
-        [Name("Creep Score")]
-        public float cs { get; set; }
-        [Name("Equipo")]
-        public String equipo { get; set; }
-        public Jugadores()
-        { }
+	public class Jugadores
+	{
+		[Display(Name = "Nombre")]
+		[Required(AllowEmptyStrings = false, ErrorMessage = " Error los datos son invalidos")]
+		[StringLength(50)]
+		public string Nombre { get; set; }
+
+		[Display(Name = "Apellido")]
+		[Required(AllowEmptyStrings = false, ErrorMessage = " Error los datos son invalidos")]
+		[StringLength(50)]
+		public string Apellido { get; set; }
 
 
-        public Jugadores(String name, String apellido, String Rol, double KDA, float CreepScore, String Equipo)
-        {
-            this.nombre = name;
-            this.apellido = apellido;
-            this.rol = Rol;
-            this.kda = KDA;
-            this.cs = CreepScore;
-            this.equipo = Equipo;
+		[Display(Name = "Rol")]
+		[Required(AllowEmptyStrings = false, ErrorMessage = " Error los datos son invalidos")]
+		[StringLength(50)]
+		public string Rol { get; set; }
 
-        }
-    }
+
+		[Display(Name = "KDA")]
+		[Required(AllowEmptyStrings = false, ErrorMessage = " Error los datos son invalidos")]
+		[StringLength(50)]
+		public decimal KDA { get; set; }
+
+
+		[Display(Name = "Creep Score")]
+		[Required(AllowEmptyStrings = false, ErrorMessage = " Error los datos son invalidos")]
+		[StringLength(50)]
+		public int CreepScore { get; set; }
+
+
+		[Display(Name = "Equipo")]
+		[Required(AllowEmptyStrings = false, ErrorMessage = " Error los datos son invalidos")]
+		[StringLength(50)]
+		public string Equipo { get; set; }
+	}
 }
