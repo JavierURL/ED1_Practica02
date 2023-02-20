@@ -9,7 +9,7 @@ namespace ED1_Practica2.Controllers
         {
             new Jugadores { Nombre = "Lester", Apellido = "Andrade", Rol = "SDI", KDA = "6.20", CreepScore = "110", Equipo = "OVEJAS"},
             new Jugadores { Nombre = "Juan", Apellido = "Esquivel", Rol = "SD", KDA = "7.30", CreepScore = "115", Equipo = "OVEJAS"},
-            new Jugadores { Nombre = "Paul", Apellido = "Flores", Rol = "MD", KDA = "5.10", CreepScore = "83", Equipo = "OVEJAS"},
+            new Jugadores { Nombre = "Paul", Apellido = "Reyna", Rol = "MD", KDA = "5.10", CreepScore = "83", Equipo = "OVEJAS"},
 
             new Jugadores { Nombre = "Sebastian", Apellido = "Catrillo", Rol = "POR", KDA = "7.20", CreepScore = "98", Equipo = "KUNISPORTS"},
             new Jugadores { Nombre = "Jorge", Apellido = "Woo", Rol = "DFI", KDA = "5.50", CreepScore = "104", Equipo = "KUNISPORTS"},
