@@ -22,7 +22,11 @@ namespace ED1_Practica2.Controllers
             new Jugadores { Nombre = "Nicolas", Apellido = "Solarez", Rol = "CAD", KDA = "6.30", CreepScore = "80", Equipo = "PIO FC"},
             new Jugadores { Nombre = "Leandro", Apellido = "Shimida", Rol = "MCD", KDA = "4.10", CreepScore = "115", Equipo = "PIO FC"},
             new Jugadores { Nombre = "Rodrigo", Apellido = "Ramirez", Rol = "LIB", KDA = "7.20", CreepScore = "95", Equipo = "PIO FC"},
-        };
+
+			new Jugadores { Nombre = "Alejandro", Apellido = "Rodriguez", Rol = "MC", KDA = "5.30", CreepScore = "67", Equipo = "MOSTOLES CF"},
+			new Jugadores { Nombre = "Daniel", Apellido = "Garcia", Rol = "MCO", KDA = "8.10", CreepScore = "98", Equipo = "MOSTOLES CF"},
+			new Jugadores { Nombre = "Camilo", Apellido = "Enriquez", Rol = "LD", KDA = "3.20", CreepScore = "145", Equipo = "MOSTOLES CF"},
+		};
 
 
         public IActionResult Index()
